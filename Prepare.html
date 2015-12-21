@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Readme</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.list {
+  color: #e06c75;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .markup.heading {
+  color: #e06c75;
+}
+.source.gfm .markup.link {
+  color: #c678dd;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="step1-">Step1 熟悉考试</h1>
+<ul>
+<li><h2 id="preview-">Preview：</h2>
+<p>可以参考有道的模考软件 <a href="http://xue.youdao.com/zx/archives/205262">http://xue.youdao.com/zx/archives/205262</a><br>跟实际考试有一点差别，实际考试会多一个V或者Q的Section，用来测试新出题目的难度，不计分（V语文 Q数学）</p>
+</li>
+<li><h2 id="-">语文题型</h2>
+<p>数学题类型不讲了，做Official Guide的题一遍就够了。语文题有如下几种类型，填空10道，阅读10道。</p>
+<h3 id="-">单空填空题</h3>
+<p>简单</p>
+<h3 id="-">双空填空题</h3>
+<p>简单</p>
+<h3 id="-">三空填空题</h3>
+<p>1~2题，比较容易错，应试策略中可以先乱选完，Mark一下，跳过，不过我没有采用</p>
+<h3 id="-">双选填空题</h3>
+<p>选两个词使句义合理且意思最接近，比较简单</p>
+<h3 id="-">阅读逻辑单题</h3>
+<p>顾名思义，1个Section只会有1道题，题目有好几种问法，问哪个条件最能削弱或最能加强文章观点，一个句子和另一个句子是什么关系（一个support另一个，一个是intermediate conclusion，另一个是explanation之类）要尽量快地读完理清逻辑关系</p>
+<h3 id="-">短阅读</h3>
+<p>120词 2题</p>
+<h3 id="-">中阅读</h3>
+<p>180词 3题</p>
+<h3 id="-">长阅读</h3>
+<p>400词 4题， 比较困难，老师教我们的应试策略，先放弃三空和长阅读，有多的时间再来做！。。。事实确实如此，我模拟和真考都是乱填的CCCC</p>
+</li>
+<li><h2 id="-">作文</h2>
+<h3 id="issue">Issue</h3>
+<p>一个简短的观点，让你据此写一篇文章。一般都是 政治、教育、科技发展啦，类型其实不多，但是像我这种工科男确实开始觉得无话可说。</p>
+<h3 id="argument">Argument</h3>
+<p>给一个作者的论述，通常会是一件实事，作者提出一个建议啦，判断一个趋势啦，blabla，让你反驳他的观点。<br>好像偶尔有一两道题不只一个观点，有两方观点。老师说可以采取“疯狗策略”，各咬一口。<br>没专门准备前一看，觉得作者说得还挺对的，有了挑错意识之后，确实他妈全是错误！<br>具体的之后再讲咯。</p>
+</li>
+<li><h2 id="-gre-">所谓的GRE考什么</h2>
+<h3 id="-">逻辑</h3>
+确实有一定道理。举个栗子：<h4 id="1-__-__-">1. 我爱__，__爱你。</h4>
+<h4 id="2-2012-3-______-">2. 2012年3月，杜甫突然在网络爆红，被网友戏称为“<strong>__</strong>”。</h4>
+A 姹紫嫣红 B 游手好闲 C 杜甫很忙 D 杜甫火了 E 穿越现代<h4 id="3-5-____-">3. 5. 法国大革命的标志是<em>__</em>攻占巴士底狱。</h4>
+A 法国人民 B 英国人民 C 巴黎人民 D 英法联军 E 八国联军     <h4 id="tips-">TIPS：不要随意用别处获得的知识答题，从原文根据“逻辑词”推答案，有时候也有用到常识的个例</h4>
+答案： 你我 D A<h3 id="-">单词量</h3>
+根据我的经验，其实真正需要的也没有多少单词量，单词有的比较重要需要优先背，而且要注意它的多种意思（考试中可能常考不常用的一种 比如qualify限制 compromise危害）。当然也有很多不重要的单词。<br>重要的单词大概是这样的吧：<br>支持反对，拥抱厌恶，高兴不高兴，生气不生气，傲慢不傲慢。<br>跟情感啊，态度啊，增减啊，正负态度比较明显的词等等等等。所以背单词要有所挑选。。有些单词书分好了优先级。</li>
+</ul>
+<h1 id="step2-">Step2 背单词</h1>
+<ul>
+<li>老师是这样说的： 红宝书（据说8000词），蓝宝书（再要你命3000）或者他们上课发的那本书GRE词汇进阶与巩固（1500词）选一本，背透即可，一本就够，包过。我果断选择了1500词的！所以我觉得词汇要求并不是很高。当然啦，你都在国外呆过那么久了，这一步应该不是问题。<br>我觉得需要做的是查漏补缺，重点单词看看有没有不认识的再记一下，所以看一下so-called 《GRE佛脚词》，我并不觉得这是抱佛脚用的。。<br>其它的在做题的时候把不会的并且自己觉得影响做题的词汇维护一个单词本就好了（我用的是有道词典的单词本 (-__-)|广告商）。</li>
+</ul>
+<h1 id="step3-">Step3 疯狂刷题之填空</h1>
+<p>题库见《500题》。因为是机考嘛，最好就直接在电脑上做吧，嫌麻烦也可以打印出来做。<br>另外画蛇添足地讲一下“做题方法论!!”</p>
+<ul>
+<li><h2 id="1-">1. 注意逻辑词</h2>
+逻辑词基本上是解题关键，又基本上可以分成同义、反义、因果、转折啥的。帮你摘抄一下讲义里的内容。（可以暂时忽略，自己总结（不总结也可以，主要是有些我原先还真不知道需要知道一下（做题的时候碰到记得更牢），比如for all, on the other hand），也可以看一下有没有不熟悉的）<h3 id="-">同义并列</h3>
+冒号引导、破折号引导<br>分句引导<br>and, or, also<br>so...as to be...<br>just as, like<br>like wise<h3 id="-">同意递进</h3>
+such as<br>suggest that, that + 不定式<br>like表比喻<br>not...but...（反义里也有）, not only...but also...<br>even, indeed<br>continue, remain, retain<br>as...as...<h3 id="-">同义因果</h3>
+cause, because, because of<br>for the reason that<br>therefore, thereby<br>in that, so...that...<br>so..as to<br>lead to, drive from, due to<br>consequently, thus<br>by virtue of<br>given, since<br>deduce, conclude<br>result, result in, result from<br>so as to<br>for<br>bespeak<h3 id="-">同义小小介词</h3>
+to, in order to, by, for, as<h3 id="-">反义对立</h3>
+paradoxically, comparatively, antithesis<br>ironically, surprisingly, unexpectedly, curiously<br>seem, seemingly
+actually, in fact, in reality<br>for all (意为虽然)<br>rather...than..., not...but...（me again）, far..from.., more..than..<br>decay..from.., shift from..to.., replace..with.., distinguish from..to.., reconcile..with.., endorse..over.., substitude..for..<br>on the other hand （往往）<br>in contrast to, on the contrary<h3 id="-">反义转折</h3>
+though, even though, although
+despite, in spite of<br>but, however, yet<br>unlike, while, whatever, nonetheless, regardless, without, none, even</li>
+<li><h2 id="2-">2. 填的是什么词</h2>
+有了逻辑词，理清了逻辑关系，你就会发现，大部分题目，填的词都是能从原文中找出原因的，新东方老师所谓的“顺推 而不是倒推”。<br>极少部分题目，主要出现在多空题，需要排列组合每空选项得出合理的填法。</li>
+<li><h2 id="3-">3. 我们需要多少正确率呢</h2>
+真实考试中两个算分Section 共40题，实际上做对个25、6道分数就还可以了，填空要求当然要高一点，在《500题》里，每一个Section 10道题，一般一个3空，大概错个3、4道是没问题的（10分钟时间限制的情况下）</li>
+</ul>
+<h1 id="step4-">Step4 疯狂刷题之阅读</h1>
+<p>我做的题库就只有《94题》，老师讲的阅读的做题方法与一般的很不同，具体的可以看《万炜上课的笔记》</p>
+<ul>
+<li><h2 id="1-">1. 先看文章，再做题</h2>
+一定要读懂文章逻辑（不一定要读懂内容，生词当作“某东西”“某概念”）。先看题，然后找答案效率很低，时间不够的时候不要妄想这么做，还不如直接填CCCC。</li>
+<li><h2 id="2-">2. 所谓的逻辑是什么呢</h2>
+<h3 id="-">顺接 可能会详细展开说明，进一步说明什么的，并列信息，因果关系</h3>
+<h3 id="-">转折</h3>
+</li>
+<li>Contrast：<br>两者对比，通常做笔记时可以画成两个阵营，比如Zwt handsome, but Lcs swangy. 这时我们能get到什么呢？swangy = not handome = ! hs = ugly， hs = ! sw （！表示否， 你需要一套自己的简单符号来做笔记，虽然我实际没怎么用，然而我的阅读是薄弱项，原因之一是我简洁明快的笔记不太会做）</li>
+<li>Paradox：<br>Zwt is handsome, but girls do not play with him.<br>奇怪现象，老师叫它“悖论”，判断这个有点需要常识，接下来一般是解释它，explain</li>
+<li><p>观点转折:<br>Main stream said zwt is ugly. However, I don&#39;t think so 。。。<br>但是观点转折没有对比那么简单可以站队，转得往往比较复杂，可以部分反对，所以这里需要仔细阅读，而上面两种以及顺接，你会发现都有预测性的东西，你可以感知到一些文章的走向，所以应该读得比较快一些。<br>比如部分转折： I don&#39;t think so. Though Zwt is not so handsome, he always appears with a sunny disposition.</p>
+</li>
+<li><h2 id="3-">3. 做笔记</h2>
+<p>比如重要的人名缩写（因为往往后面要忘记），逻辑关系  </p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ZWT</th>
+<th>LCS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hs</td>
+<td>sw</td>
+</tr>
+<tr>
+<td>!play with girl &lt;- homosexual</td>
+<td>play with girl ( Alice, hmy)</td>
+</tr>
+<tr>
+<td></td>
+<td><del>! have girlfriend</del> &lt;- we has not discovered</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><h2 id="4-">4. 文章类型及观点拥有者</h2>
+必须要分清一句话是谁的观点，因为会影响做题。没有引用的部分才是作者的观点。但是作者的观点有时候有很隐蔽。具体可以在后面的题目类型中看到。</li>
+<li><h2 id="5-">5. 题目类型</h2>
+<h3 id="-">主旨题</h3>
+<p>老师把文章分为三类，引用别人、提出观点、评论观点，主要用来解决这类题<br>比如 The author&#39;s primary purpose is to的题，我们需要先关注出现的第一个动词，来快速排除选项<br>1、 引用：比如present two views 或者其他陈述、展示性的词<br>2、 提： argue, suggest 提观点的词。。 这些词自己积累吧，做题有感觉的<br>3、 评论他人： 这时候可以challenge, refute什么的来反对别人了，或者evaluate，appraise<br>另外，主旨题选项绝对不要细节内容</p>
+<h3 id="-">信息功能题</h3>
+<p>问作者提到这个什么什么，是为了什么（有什么作用），一般也不涉及细节，优先考虑为主旨服务，找不到再看细节选项。</p>
+<h3 id="-">细节题及其他</h3>
+<p>很少，也没有什么快速做题的要点，不讲了</p>
+</li>
+<li><h2 id="6-">6. 新信息和旧信息</h2>
+<p>为了读得快，要有意识的区分一下这点。像顺接关系中的展开说明，举例说明，或者转折里对比的第二个对象，或者解释一个悖论，就是你能判断他这里在说什么的时候，你就知道了这里是旧信息，往往可以读得很快，直到发现下一个逻辑词或者逻辑发生变化的句子。</p>
+</li>
+</ul>
+<h1 id="step5-">Step5 作文</h1>
+<ul>
+<li><h2 id="issue">Issue</h2>
+<p>一般写5段或以上，除去头和尾有三个主体段落。Issue的头尾可以比较随意的写，像普通作文一样表明观点以及总结。主体部分注意的比较多。其他还有格式要求，机器判分的某些奇怪语法错误要注意。</p>
+<h3 id="-argue-">格式要求 （Argue也相同）</h3>
+<p>可以参考官方范文。由于有机器监督判分（人批，机器批，两个误差大于0.5分则ETS的老师再批），所以有些规则比较奇怪。<br>每段顶格写，两段之间空一行出来。标点符号后空一格。<br>主体段落每段不少于5句话。<br>除了个别不可避免单词，其他单词不得重复超过15次，超过15次是死罪！<br>字数一定要达到！不达到不可能上4分。怎么判断？滚动条出现，且空出1/4以上，模拟软件里也是如此<br>非同根词称为unique word。比如form和reform是同根。unique word数目要超过1/3。<br>平均句长18~22词 也就是平均每句得写一行半以上</p>
+<h3 id="-argue-">电脑评测的奇怪语法错误（Argue相同）</h3>
+<p>A be xxx-ed by B 电脑认为你没必要用被动语态 算错<br>Only by this, can zwt succeed. 虚拟语气倒装，老师说也会算错，没有验证过<br>can not 没有这种写法 应该是cannot<br>the + 名词复数 直接算你冠词多余
+Argument中一些奇怪城市名什么的缩写成1个字母，不然会算错误单词 （第一次出现的时候就算了）  </p>
+<h3 id="-">主体段落写法</h3>
+<p>为了提高unique word，我们就是要从多方面写。有“TSP”拆分法，Time Space Person。<br>比如我写教育相关的，直接想到从老师、学生、家庭、教育机构、国家教育目的等等中间选3~4个方面成段落就行了。再比如老人、成人、我们。再比如过去、现在、将来。 或者支持、反对，偏向哪个并说明不利条件怎么避免。</p>
+<h3 id="-">电脑测试</h3>
+<p>。。我一直写好放到批改网去测试，查一下语法错误，实际上他很烂的。还有ETS官方的评测ScoreItNow要钱的，不过我还有两篇免费的可以交。</p>
+</li>
+<li><h2 id="argument">Argument</h2>
+<h3 id="-">头尾写法</h3>
+<p>头里写清楚作者结论是什么，简单介绍他拿什么支持这个结论。然后说反对他，他不对，不合逻辑，untenable。结尾再说一遍。。或者补充他需要知道什么，需要做什么。<br>总之，头尾是要写得很熟练，像模板一样，节省时间。</p>
+<h3 id="-">中间</h3>
+<p>也是3、4段，其实也可以形成模板。另外，你去看题目有四种作文要求：<br>1、给出其他合理解释<br>2、说明作者依赖哪些假设，指出假设的错误<br>3、还需要回答哪些问题才能形成合理的结论<br>4、还需要补充哪些证据才能形成合理的结论<br>每种要求都应该稍微用几句话呼应一下，比如他问假设，你就要说比如The author assumes that.., His reasoning is based on an assumption that...。<br>每段我们要指出作者的错误，错误一般都是在推理过程里（assumption），或者统计数据能否反应问题里，或者错误类比里什么的，不要指出他给定的事实的错误。<br>老师教我们如果一段写不长的话，就这么做：MAPES去凑 Mention 什么， Assume什么， Another Possibility是什么， Evaluate his assertion， Suggest him to 干什么。MAPES顺序也可以随便调。<br>当然啦，能写得长的人就是能想出一万种可能性，来驳斥作者的观点，也就是有Many other possibilities</p>
+<h3 id="-argue-">想不出来一万种可能性可以参考《argue中文提纲》</h3>
+</li>
+</ul>
+<h1 id="step6-">Step6 模拟测试</h1>
+<ul>
+<li><h2 id="-">就用官方模拟测试 为了保证题目没看见过，考试前再去做吧。</h2>
+</li>
+<li><h2 id="-powerprep-ii-ets-org-gre-prepare-for-test-learn-more-about-powerprep-ii-version-2-2-software">名字叫PowerPrep II   去ets.org/gre -&gt; prepare for test -&gt; Learn more about POWERPREP II, Version 2.2 Software</h2>
+</li>
+</ul></body>
+</html>
