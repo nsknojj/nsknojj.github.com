@@ -1,5 +1,5 @@
-var total=3;
-var date_list=['2013-7-20','2013-6-20','2013-7-30']
+var total=4;
+var date_list=['2013-7-20','2013-6-20','2013-7-30','2016-10-5']
 
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
@@ -148,6 +148,10 @@ $(function (){
     $("#button3").click(function () {
         hideWord();
         setWriter(3);
+    });
+    $("#button4").click(function () {
+        hideWord();
+        setWriter(4);
     });
 });
 
