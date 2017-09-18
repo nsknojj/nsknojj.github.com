@@ -21,12 +21,13 @@ word-spacing: 5px;
 line-height: 2;
 }
 .label-keyword {
-display: inline-block;
-background: #7eb0db;
-color: white;
-font-size: 0.9em;
-padding: 5px;
-border: 1px solid #357ebd;
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  border-radius: 6px;
 }
 .link-disguise {
 color: inherit;
@@ -43,15 +44,15 @@ margin-bottom: 0;
 }
 }
 body {
-font-family: 'Lato';
+font-family: 'sans-serif', 'Helvectica', 'Lato';
 background: #f0f0f0;
-color: #333333;
+color: #222222;
 }
 .main {
 padding: 5px;
 }
 .card {
-background: #ffffff;
+background: #F5F8FA;
 border: 1px solid #e6e6e6;
 border-radius: 3px;
 min-height: 300px;
